@@ -17,7 +17,7 @@ class Feed extends Component{
     async componentDidMount(){//é como se fosse o construct, assim que a classe é carregada essa função é disparada
         this.registerToSocket();
         
-        const response = await api.get('posts');//aqui está chamando http://localhost:3334 que eu difini no arquivo api mais o arquivo que eu quero que é os posts; e irá retornar uma variavel data com todas as informações do feed
+        const response = await api.get('posts');
         this.setState({feed: response.data});
     }
 
