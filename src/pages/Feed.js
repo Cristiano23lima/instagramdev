@@ -58,7 +58,7 @@ class Feed extends Component{
                             <img src={more} alt="Mais"/>
                         </header>
 
-                            <img src={`http://localhost:8081/files/${post.image}`} alt="" />
+                            <img src={`https://backendinstagramdev.herokuapp.com/files/${post.image}`} alt="" />
 
                         <footer>
                             <div className='actions'>
