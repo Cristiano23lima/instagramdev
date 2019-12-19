@@ -22,7 +22,7 @@ class Feed extends Component{
     }
 
     registerToSocket = () => {
-        const socket = io('http://localhost:3333');
+        const socket = io('https://backendinstagramdev.herokuapp.com/');
 
         //post, like
         socket.on('post', newPost => {
